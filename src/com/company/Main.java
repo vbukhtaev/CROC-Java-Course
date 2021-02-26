@@ -2,6 +2,12 @@ package com.company;
 
 public class Main {
 
+    /**
+     * Homework #1
+     * @version 1.0
+     * @author Bukhtaev Vladislav
+     */
+
     /*
         Задание.
         Написать программу, которая выводит на экран числа от 1 до 100.
