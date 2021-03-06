@@ -1,47 +1,36 @@
 package com.company;
 
+import com.company.Players.MusicPlayer;
+import com.company.Players.VinylPlayer;
+import com.company.Storage.CD;
+import com.company.Storage.Storage;
+import com.company.Storage.VinylRecord;
+
 public class Main {
 
     /**
-     * Homework #1
+     * Homework #2
      * @version 1.0
      * @author Bukhtaev Vladislav
      */
 
     /*
         Задание.
-        Написать программу, которая выводит на экран числа от 1 до 100.
-        При этом вместо чисел, кратных трем, программа должна выводить слово "Fizz",
-        а вместо чисел, кратных пяти - слово "Buzz".
-        Если число кратно и 3, и 5, то программа должна выводить слово "FizzBuzz".
+        Необходимо разработать музыкальную систему.
+        Существует несколько звуковоспроизводящих устройств (виниловый проигрыватель, CD, универсальный плеер и т.д.).
+        Существует несколько носителей музыкальных композиций (пластинка, CD, флешка).
+        Существуют несколько песен, у которых есть имя исполнителя (группы) и название.
+        Звуковоспроизводящее устройство должно выводить в консоль информацию о том,
+        что за устройство воспроизводит песню, ее исполнителя (группу) и название.
+        В случае, если устройство не может воспроизвести песню с требуемого носителя, выводить соответствующее сообщение.
      */
 
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 100; i++) {
-
-            StringBuilder output = new StringBuilder();
-
-            if (i % 3 == 0) {
-                output.append("Fizz");
-            }
-            if (i % 5 == 0) {
-                output.append("Buzz");
-            }
-
-            // Чтобы не проверять 2 условия кратности.
-            // if ((i % 3 != 0) && (i % 5 != 0)) {
-            if (output.length() == 0) {
-                output.append(i);
-            }
-
-            System.out.println(output);
-        }
-
+        MusicPlayer musicPlayer1 = new VinylPlayer("Грамофон", "9000");
+        Storage storage1 = new VinylRecord("AC/DC", "Highway to Hell");
+        Storage storage2 = new CD("AC/DC", "Highway to Hell");
+        musicPlayer1.play(storage1);
+        musicPlayer1.play(storage2);
     }
-    /*
-        Была мысль создать объект класса StringBuilder перед циклом,
-        и очищать его методом .setLength(0) или .delete(0, output.length()) в начале каждой итерации.
-        Чтобы не создавать объект 100 раз. Стоит ли так делать?
-     */
 }
