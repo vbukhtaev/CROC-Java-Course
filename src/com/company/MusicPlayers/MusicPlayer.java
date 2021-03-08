@@ -1,8 +1,6 @@
-package com.company.Players;
+package com.company.MusicPlayers;
 
-import com.company.Storage.Storage;
-
-public abstract class MusicPlayer {
+public abstract class MusicPlayer implements AbleToPlay{
 
     private String manufacturer;
     private String model;
@@ -10,13 +8,6 @@ public abstract class MusicPlayer {
     public MusicPlayer(String manufacturer, String model) {
         this.manufacturer = manufacturer;
         this.model = model;
-    }
-
-    public abstract void play(Storage storage);
-
-    @Override
-    public String toString() {
-        return "\"" + this.getManufacturer() + " " + this.getModel() + "\"";
     }
 
     public String getManufacturer() {
