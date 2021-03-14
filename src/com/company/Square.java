@@ -19,7 +19,7 @@ public class Square {
     private int y;
 
     /**
-     * Constructs a square the specified coordinates.
+     * Constructs a square with the specified coordinates.
      * @param x X coordinate
      * @param y Y coordinate
      * @throws IllegalArgumentException if at least one specified coordinate is out of range [0; 7]

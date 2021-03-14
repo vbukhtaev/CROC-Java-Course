@@ -27,7 +27,7 @@ public class Main {
          */
         try {
             Square square = new Square(2, 3);
-            System.out.println("Успешно создана клетка " + square + " с координатами [2, 3]");
+            System.out.println("Успешно создана клетка " + square + " с координатами [" + square.getX() + ", " + square.getY() + "]");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
         }
@@ -39,7 +39,7 @@ public class Main {
          */
         try {
             Square square = new Square(1, 8);
-            System.out.println("Никаких исключений выброшено небыло"); // Не выпонится.
+            System.out.println("Успешно создана клетка " + square + " с координатами [" + square.getX() + ", " + square.getY() + "]"); // Не выпонится.
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
         }
@@ -53,7 +53,7 @@ public class Main {
             Square square = new Square(0, 0);
             square.setX(5);
             square.setY(2);
-            System.out.println("Координаты клетки A1 успешно изменены на [5, 2]");
+            System.out.println("Координаты клетки A1 успешно изменены на [" + square.getX() + ", " + square.getY() + "]");
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
         }
@@ -66,7 +66,7 @@ public class Main {
         try {
             Square square = new Square(0, 0);
             square.setX(9);
-            System.out.println("Никаких исключений выброшено небыло"); // Не выпонится.
+            System.out.println("Координаты клетки A1 успешно изменены на [" + square.getX() + ", " + square.getY() + "]"); // Не выпонится.
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
         }
@@ -79,7 +79,7 @@ public class Main {
         try {
             Square square = new Square(0, 0);
             square.setY(8);
-            System.out.println("Никаких исключений выброшено небыло"); // Не выпонится.
+            System.out.println("Координаты клетки A1 успешно изменены на [" + square.getX() + ", " + square.getY() + "]"); // Не выпонится.
         } catch (IllegalArgumentException e) {
             System.err.println(e.getMessage());
         }
@@ -87,6 +87,6 @@ public class Main {
 
         // Вывод клетки F4 в консоль.
         Square square = new Square(1, 1);
-        System.out.println("Клетка с координатами [1, 1] называется " + square);
+        System.out.println("Клетка с координатами [" + square.getX() + ", " + square.getY() + "] называется " + square);
     }
 }
