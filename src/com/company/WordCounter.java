@@ -4,17 +4,30 @@ import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * Class describing an entity that counts words in a file.
+ */
 public class WordCounter {
 
-    private String path;
+    /**
+     * The file in which the words will be counted.
+     */
+    private File file;
+
+    /**
+     * Constructs and initializes a {@code WordCounter} with the specified file.
+     * @param file the file of the newly constructed {@code WordCounter}
+     */
+    public WordCounter(File file) {
+        this.file = file;
+    }
 
     /**
      * Constructs and initializes a {@code WordCounter} with the specified file path.
-     * @param path the file path of the newly constructed {@code WordCounter}
+     * @param filePath the file path of the newly constructed {@code WordCounter}
      */
-    public WordCounter(String path) {
-
-        this.path = path;
+    public WordCounter(String filePath) {
+        this.file = new File(filePath);
     }
 
     /**
@@ -29,7 +42,7 @@ public class WordCounter {
 
         // Считываем текст из файла.
         try (BufferedReader reader = new BufferedReader(
-                new FileReader(this.path))
+                new FileReader(this.file))
         ) {
 
             String currentLine;
@@ -52,9 +65,10 @@ public class WordCounter {
      */
     private static int countWordsInString(String string) {
 
-        // '? - для учета английских слов-сокращений, таких как it's, isn't и т.п.
+        // '? - для учета английских слов-сокращений, таких как "it's", "isn't" и т.п.
+        // -? - для учета составных сложных слов, таких как "плащ-палатка", "IT-специалист" и т.п.
         // Pattern.UNICODE_CHARACTER_CLASS - для поддержки кириллицы.
-        Pattern wordPattern = Pattern.compile("\\b\\w+'?\\w*\\b", Pattern.UNICODE_CHARACTER_CLASS);
+        Pattern wordPattern = Pattern.compile("\\b\\w+'?-?\\w*\\b", Pattern.UNICODE_CHARACTER_CLASS);
         Matcher matcher = wordPattern.matcher(string);
 
         int wordsAmount = 0;
