@@ -10,20 +10,17 @@ import java.util.concurrent.*;
 public class SpaceCounter {
 
     /**
-     * Лимит времени для ожидания.
-     */
-    private static final long TIME_LIMIT = 30_000;
-
-    /**
      * Считает количество повторений символа в строке.
      *
-     * @param source   исходная строка
-     * @param template символ
+     * @param source    исходная строка
+     * @param template  символ
+     * @param timeLimit лимит времени для ожидания
+     * @param unit      единицы измерения времени
      * @throws ExecutionException   если осуществляется попытка получения результата задачи,
      *                              которая была прервана исключением
      * @throws InterruptedException если текущий поток был прерван во время ожидания
      */
-    public static void count(String source, String template) throws ExecutionException, InterruptedException {
+    public static void count(String source, String template, long timeLimit, TimeUnit unit) throws ExecutionException, InterruptedException {
 
         final long startTime = System.currentTimeMillis();
 
@@ -35,7 +32,7 @@ public class SpaceCounter {
         List<Future<Integer>> localResults = new ArrayList<>();
 
         // Передаем отдельную задачу для каждой подстроки в thread pool.
-        // При этом сохраняем локальный результат в наш список.
+        // При этом сохраняем локальный результат в наш список localResults.
         for (String subString : subStrings) {
 
             localResults.add(executor.submit(new Callable<Integer>() {
@@ -57,7 +54,7 @@ public class SpaceCounter {
 
         executor.shutdown();
 
-        boolean isFinished = executor.awaitTermination(TIME_LIMIT, TimeUnit.MILLISECONDS);
+        boolean isFinished = executor.awaitTermination(timeLimit, unit);
 
         if (isFinished) {
             int totalCount = 0;
@@ -72,6 +69,10 @@ public class SpaceCounter {
             System.out.println("It took " + takenTime / 1000.0 + " seconds.");
 
         } else {
+            /*
+                Если потоки thread pool'a не успели отработать и завершиться
+                за отведенное время (не успели досчитать), то результат нас не интересует - он не актуален.
+             */
             System.out.println("Time is out!");
         }
     }
@@ -90,6 +91,10 @@ public class SpaceCounter {
      * @return массив подстрок исходной строки
      */
     private static String[] split(String source, int length) {
+
+        if (length <= 0) {
+            throw new IllegalArgumentException("Длина подстроки не положительная!");
+        }
 
         int size = (int) Math.ceil((double) source.length() / (double) length);
         String[] result = new String[size];

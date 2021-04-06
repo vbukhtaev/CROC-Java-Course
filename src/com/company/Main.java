@@ -1,13 +1,13 @@
 package com.company;
 
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
     /**
-     * Homework #5
+     * <strong>Homework #5</strong>
      *
-     * @author Bukhtaev Vladislav
      * <p>
      * Задание:
      * </p>
@@ -20,6 +20,7 @@ public class Main {
      * Параметры:
      * <ul><li>str – строка в которой ищется символ
      * <li>character – искомый символ
+     * @author Bukhtaev Vladislav
      */
 
     private static final String TEMPLATE = " ";
@@ -42,7 +43,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            SpaceCounter.count(INPUT_STRING, TEMPLATE);
+            SpaceCounter.count(INPUT_STRING, TEMPLATE, 30_000, TimeUnit.MILLISECONDS);
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
