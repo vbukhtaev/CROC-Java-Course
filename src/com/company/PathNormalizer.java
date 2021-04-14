@@ -1,9 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,48 +19,36 @@ public class PathNormalizer {
 
         List<String> directories = getDirectories(path);
 
+        Deque<String> normalizedDirs = new LinkedList<>();
+
         // Удаляем все одинарные точки.
-        directories.removeIf((dir) -> dir.equals("."));
+        directories.removeIf(directory -> directory.equals("."));
 
-        // Список для всех ".." из начала исходного пути.
-        List<String> unknownParents = new ArrayList<>();
+        for (String directory : directories) {
 
-        ListIterator<String> iterator = directories.listIterator();
+            if (directory.equals("..")) {
 
-        while (iterator.hasNext()) {
+                if (normalizedDirs.isEmpty() || normalizedDirs.peekLast().equals("..")) {
+                    normalizedDirs.offerLast(directory);
 
-            if (iterator.next().equals("..")) {
+                } else if (!isRoot(normalizedDirs.peekLast())) {
 
-                // Удаляем ".."
-                iterator.previous();
-                iterator.remove();
-
-                // Удаляем предшествующую директорию.
-                if (iterator.hasPrevious()) {
-
-                    // Корневую папку удалять нельзя.
-                    if (!isRoot(iterator.previous())) {
-                        iterator.remove();
-                    }
-
-                } else {
-                    // Если выходим слишком высоко по иерархии.
-                    unknownParents.add("..");
+                    // Удаляем предшествующую директорию,
+                    // если она не является коневой.
+                    normalizedDirs.pollLast();
                 }
+
+            } else {
+                normalizedDirs.offerLast(directory);
             }
         }
 
-        // Возвращаем все ".." из начала исходного пути.
-        directories.addAll(0, unknownParents);
-
         // Если в нормализованном пути только корневая папка, то добавляем "\"
-        String last = directories.get(directories.size() - 1);
-
-        if (isRoot(last)) {
-            directories.set(0, last + "\\");
+        if (isRoot(normalizedDirs.peekLast())) {
+            normalizedDirs.offerLast(normalizedDirs.pollLast() + "\\");
         }
 
-        return String.join("\\", directories);
+        return String.join("\\", normalizedDirs);
     }
 
     /**
