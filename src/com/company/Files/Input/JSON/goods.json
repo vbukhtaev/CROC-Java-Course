@@ -1,0 +1,38 @@
+[
+  {
+    "id": 111,
+    "name": "Tesla Model 3"
+  },
+  {
+    "id": 222,
+    "name": "Tesla Model X"
+  },
+  {
+    "id": 333,
+    "name": "Tesla Model S"
+  },
+  {
+    "id": 444,
+    "name": "Jaguar I-Pace"
+  },
+  {
+    "id": 555,
+    "name": "BMW i3"
+  },
+  {
+    "id": 666,
+    "name": "Chevrolet Bolt"
+  },
+  {
+    "id": 777,
+    "name": "Nissan Leaf"
+  },
+  {
+    "id": 888,
+    "name": "Porsche Taycan"
+  },
+  {
+    "id": 999,
+    "name": "Audi e-tron"
+  }
+]

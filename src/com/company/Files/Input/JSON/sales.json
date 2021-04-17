@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "seller_id": 1,
+    "good_id": 777,
+    "amount": 1,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 2,
+    "seller_id": 1,
+    "good_id": 666,
+    "amount": 3,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 3,
+    "seller_id": 5,
+    "good_id": 888,
+    "amount": 5,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 4,
+    "seller_id": 3,
+    "good_id": 222,
+    "amount": 1,
+    "date": "2021-01-10"
+  },
+  {
+    "id": 5,
+    "seller_id": 7,
+    "good_id": 222,
+    "amount": 9,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 6,
+    "seller_id": 1,
+    "good_id": 999,
+    "amount": 4,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 7,
+    "seller_id": 2,
+    "good_id": 222,
+    "amount": 3,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 8,
+    "seller_id": 1,
+    "good_id": 555,
+    "amount": 2,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 9,
+    "seller_id": 4,
+    "good_id": 666,
+    "amount": 4,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 10,
+    "seller_id": 6,
+    "good_id": 444,
+    "amount": 2,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 11,
+    "seller_id": 4,
+    "good_id": 888,
+    "amount": 9,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 12,
+    "seller_id": 1,
+    "good_id": 999,
+    "amount": 8,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 13,
+    "seller_id": 4,
+    "good_id": 222,
+    "amount": 8,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 14,
+    "seller_id": 6,
+    "good_id": 777,
+    "amount": 3,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 15,
+    "seller_id": 6,
+    "good_id": 888,
+    "amount": 8,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 16,
+    "seller_id": 3,
+    "good_id": 555,
+    "amount": 4,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 17,
+    "seller_id": 6,
+    "good_id": 555,
+    "amount": 6,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 18,
+    "seller_id": 2,
+    "good_id": 444,
+    "amount": 4,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 19,
+    "seller_id": 6,
+    "good_id": 999,
+    "amount": 2,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 20,
+    "seller_id": 5,
+    "good_id": 555,
+    "amount": 2,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 21,
+    "seller_id": 3,
+    "good_id": 333,
+    "amount": 3,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 22,
+    "seller_id": 6,
+    "good_id": 888,
+    "amount": 2,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 23,
+    "seller_id": 2,
+    "good_id": 777,
+    "amount": 9,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 24,
+    "seller_id": 2,
+    "good_id": 555,
+    "amount": 9,
+    "date": "2021-01-01"
+  },
+  {
+    "id": 25,
+    "seller_id": 1,
+    "good_id": 444,
+    "amount": 4,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 26,
+    "seller_id": 7,
+    "good_id": 444,
+    "amount": 3,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 27,
+    "seller_id": 4,
+    "good_id": 111,
+    "amount": 4,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 28,
+    "seller_id": 5,
+    "good_id": 777,
+    "amount": 7,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 29,
+    "seller_id": 4,
+    "good_id": 444,
+    "amount": 8,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 30,
+    "seller_id": 5,
+    "good_id": 333,
+    "amount": 5,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 31,
+    "seller_id": 3,
+    "good_id": 222,
+    "amount": 1,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 32,
+    "seller_id": 4,
+    "good_id": 555,
+    "amount": 3,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 33,
+    "seller_id": 7,
+    "good_id": 999,
+    "amount": 4,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 34,
+    "seller_id": 2,
+    "good_id": 444,
+    "amount": 2,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 35,
+    "seller_id": 6,
+    "good_id": 333,
+    "amount": 8,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 36,
+    "seller_id": 1,
+    "good_id": 777,
+    "amount": 10,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 37,
+    "seller_id": 3,
+    "good_id": 333,
+    "amount": 3,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 38,
+    "seller_id": 5,
+    "good_id": 777,
+    "amount": 1,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 39,
+    "seller_id": 6,
+    "good_id": 111,
+    "amount": 3,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 40,
+    "seller_id": 6,
+    "good_id": 222,
+    "amount": 1,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 41,
+    "seller_id": 7,
+    "good_id": 444,
+    "amount": 6,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 42,
+    "seller_id": 3,
+    "good_id": 222,
+    "amount": 3,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 43,
+    "seller_id": 7,
+    "good_id": 666,
+    "amount": 4,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 44,
+    "seller_id": 4,
+    "good_id": 111,
+    "amount": 9,
+    "date": "2021-01-01"
+  },
+  {
+    "id": 45,
+    "seller_id": 7,
+    "good_id": 777,
+    "amount": 4,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 46,
+    "seller_id": 2,
+    "good_id": 333,
+    "amount": 8,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 47,
+    "seller_id": 3,
+    "good_id": 555,
+    "amount": 4,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 48,
+    "seller_id": 4,
+    "good_id": 222,
+    "amount": 10,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 49,
+    "seller_id": 6,
+    "good_id": 444,
+    "amount": 7,
+    "date": "2021-01-09"
+  },
+  {
+    "id": 50,
+    "seller_id": 7,
+    "good_id": 111,
+    "amount": 5,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 51,
+    "seller_id": 1,
+    "good_id": 555,
+    "amount": 9,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 52,
+    "seller_id": 7,
+    "good_id": 888,
+    "amount": 10,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 53,
+    "seller_id": 2,
+    "good_id": 111,
+    "amount": 4,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 54,
+    "seller_id": 1,
+    "good_id": 666,
+    "amount": 8,
+    "date": "2021-01-01"
+  },
+  {
+    "id": 55,
+    "seller_id": 6,
+    "good_id": 999,
+    "amount": 5,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 56,
+    "seller_id": 4,
+    "good_id": 666,
+    "amount": 7,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 57,
+    "seller_id": 7,
+    "good_id": 111,
+    "amount": 7,
+    "date": "2021-01-10"
+  },
+  {
+    "id": 58,
+    "seller_id": 3,
+    "good_id": 666,
+    "amount": 10,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 59,
+    "seller_id": 4,
+    "good_id": 444,
+    "amount": 5,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 60,
+    "seller_id": 4,
+    "good_id": 999,
+    "amount": 8,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 61,
+    "seller_id": 2,
+    "good_id": 333,
+    "amount": 3,
+    "date": "2021-01-05"
+  },
+  {
+    "id": 62,
+    "seller_id": 1,
+    "good_id": 666,
+    "amount": 8,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 63,
+    "seller_id": 7,
+    "good_id": 777,
+    "amount": 8,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 64,
+    "seller_id": 5,
+    "good_id": 888,
+    "amount": 1,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 65,
+    "seller_id": 2,
+    "good_id": 999,
+    "amount": 6,
+    "date": "2021-01-09"
+  },
+  {
+    "id": 66,
+    "seller_id": 1,
+    "good_id": 999,
+    "amount": 4,
+    "date": "2021-01-01"
+  },
+  {
+    "id": 67,
+    "seller_id": 2,
+    "good_id": 444,
+    "amount": 9,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 68,
+    "seller_id": 1,
+    "good_id": 222,
+    "amount": 2,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 69,
+    "seller_id": 2,
+    "good_id": 444,
+    "amount": 7,
+    "date": "2021-01-10"
+  },
+  {
+    "id": 70,
+    "seller_id": 4,
+    "good_id": 444,
+    "amount": 6,
+    "date": "2021-01-09"
+  },
+  {
+    "id": 71,
+    "seller_id": 4,
+    "good_id": 999,
+    "amount": 8,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 72,
+    "seller_id": 6,
+    "good_id": 111,
+    "amount": 8,
+    "date": "2021-01-01"
+  },
+  {
+    "id": 73,
+    "seller_id": 2,
+    "good_id": 777,
+    "amount": 8,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 74,
+    "seller_id": 5,
+    "good_id": 555,
+    "amount": 10,
+    "date": "2021-01-09"
+  },
+  {
+    "id": 75,
+    "seller_id": 3,
+    "good_id": 333,
+    "amount": 2,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 76,
+    "seller_id": 3,
+    "good_id": 222,
+    "amount": 3,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 77,
+    "seller_id": 2,
+    "good_id": 555,
+    "amount": 9,
+    "date": "2021-01-01"
+  },
+  {
+    "id": 78,
+    "seller_id": 6,
+    "good_id": 888,
+    "amount": 6,
+    "date": "2021-01-09"
+  },
+  {
+    "id": 79,
+    "seller_id": 2,
+    "good_id": 111,
+    "amount": 6,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 80,
+    "seller_id": 3,
+    "good_id": 111,
+    "amount": 8,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 81,
+    "seller_id": 4,
+    "good_id": 888,
+    "amount": 2,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 82,
+    "seller_id": 5,
+    "good_id": 222,
+    "amount": 9,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 83,
+    "seller_id": 1,
+    "good_id": 333,
+    "amount": 6,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 84,
+    "seller_id": 3,
+    "good_id": 999,
+    "amount": 2,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 85,
+    "seller_id": 1,
+    "good_id": 666,
+    "amount": 9,
+    "date": "2021-01-10"
+  },
+  {
+    "id": 86,
+    "seller_id": 5,
+    "good_id": 666,
+    "amount": 3,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 87,
+    "seller_id": 5,
+    "good_id": 777,
+    "amount": 5,
+    "date": "2021-01-06"
+  },
+  {
+    "id": 88,
+    "seller_id": 4,
+    "good_id": 111,
+    "amount": 2,
+    "date": "2021-01-09"
+  },
+  {
+    "id": 89,
+    "seller_id": 2,
+    "good_id": 111,
+    "amount": 4,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 90,
+    "seller_id": 3,
+    "good_id": 111,
+    "amount": 8,
+    "date": "2021-01-03"
+  },
+  {
+    "id": 91,
+    "seller_id": 6,
+    "good_id": 777,
+    "amount": 4,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 92,
+    "seller_id": 6,
+    "good_id": 222,
+    "amount": 3,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 93,
+    "seller_id": 3,
+    "good_id": 222,
+    "amount": 8,
+    "date": "2021-01-07"
+  },
+  {
+    "id": 94,
+    "seller_id": 3,
+    "good_id": 888,
+    "amount": 2,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 95,
+    "seller_id": 2,
+    "good_id": 444,
+    "amount": 10,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 96,
+    "seller_id": 1,
+    "good_id": 444,
+    "amount": 7,
+    "date": "2021-01-08"
+  },
+  {
+    "id": 97,
+    "seller_id": 2,
+    "good_id": 333,
+    "amount": 3,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 98,
+    "seller_id": 4,
+    "good_id": 888,
+    "amount": 2,
+    "date": "2021-01-04"
+  },
+  {
+    "id": 99,
+    "seller_id": 3,
+    "good_id": 222,
+    "amount": 1,
+    "date": "2021-01-02"
+  },
+  {
+    "id": 100,
+    "seller_id": 5,
+    "good_id": 555,
+    "amount": 8,
+    "date": "2021-01-05"
+  }
+]

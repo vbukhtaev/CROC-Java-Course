@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sellers xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation = "sellers.xsd">
+    <seller>
+        <id>1</id>
+        <first_name>Леонид</first_name>
+        <last_name>Красилов</last_name>
+    </seller>
+    <seller>
+        <id>2</id>
+        <first_name>Павел</first_name>
+        <last_name>Романов</last_name>
+    </seller>
+    <seller>
+        <id>3</id>
+        <first_name>Михаил</first_name>
+        <last_name>Морозов</last_name>
+    </seller>
+    <seller>
+        <id>4</id>
+        <first_name>Валерия</first_name>
+        <last_name>Колодина</last_name>
+    </seller>
+    <seller>
+        <id>5</id>
+        <first_name>Данил</first_name>
+        <last_name>Бараховский</last_name>
+    </seller>
+    <seller>
+        <id>6</id>
+        <first_name>Владислав</first_name>
+        <last_name>Бухтаев</last_name>
+    </seller>
+    <seller>
+        <id>7</id>
+        <first_name>Сергей</first_name>
+        <last_name>Фирсов</last_name>
+    </seller>
+</sellers>

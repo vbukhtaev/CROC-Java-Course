@@ -1,0 +1,380 @@
+[
+  {
+    "seller_id": 1,
+    "good_id": 111,
+    "amount": 23,
+    "price": 45686
+  },
+  {
+    "seller_id": 1,
+    "good_id": 222,
+    "amount": 28,
+    "price": 110921
+  },
+  {
+    "seller_id": 1,
+    "good_id": 333,
+    "amount": 24,
+    "price": 81185
+  },
+  {
+    "seller_id": 1,
+    "good_id": 444,
+    "amount": 20,
+    "price": 105033
+  },
+  {
+    "seller_id": 1,
+    "good_id": 555,
+    "amount": 20,
+    "price": 52882
+  },
+  {
+    "seller_id": 1,
+    "good_id": 666,
+    "amount": 28,
+    "price": 37499
+  },
+  {
+    "seller_id": 1,
+    "good_id": 777,
+    "amount": 22,
+    "price": 40778
+  },
+  {
+    "seller_id": 1,
+    "good_id": 888,
+    "amount": 19,
+    "price": 157444
+  },
+  {
+    "seller_id": 1,
+    "good_id": 999,
+    "amount": 16,
+    "price": 78086
+  },
+  {
+    "seller_id": 2,
+    "good_id": 111,
+    "amount": 16,
+    "price": 33092
+  },
+  {
+    "seller_id": 2,
+    "good_id": 222,
+    "amount": 16,
+    "price": 88821
+  },
+  {
+    "seller_id": 2,
+    "good_id": 333,
+    "amount": 23,
+    "price": 112790
+  },
+  {
+    "seller_id": 2,
+    "good_id": 444,
+    "amount": 20,
+    "price": 102519
+  },
+  {
+    "seller_id": 2,
+    "good_id": 555,
+    "amount": 25,
+    "price": 55937
+  },
+  {
+    "seller_id": 2,
+    "good_id": 666,
+    "amount": 20,
+    "price": 37426
+  },
+  {
+    "seller_id": 2,
+    "good_id": 777,
+    "amount": 27,
+    "price": 33752
+  },
+  {
+    "seller_id": 2,
+    "good_id": 888,
+    "amount": 21,
+    "price": 144254
+  },
+  {
+    "seller_id": 2,
+    "good_id": 999,
+    "amount": 28,
+    "price": 73290
+  },
+  {
+    "seller_id": 3,
+    "good_id": 111,
+    "amount": 15,
+    "price": 33615
+  },
+  {
+    "seller_id": 3,
+    "good_id": 222,
+    "amount": 18,
+    "price": 113152
+  },
+  {
+    "seller_id": 3,
+    "good_id": 333,
+    "amount": 24,
+    "price": 131855
+  },
+  {
+    "seller_id": 3,
+    "good_id": 444,
+    "amount": 18,
+    "price": 105013
+  },
+  {
+    "seller_id": 3,
+    "good_id": 555,
+    "amount": 17,
+    "price": 59009
+  },
+  {
+    "seller_id": 3,
+    "good_id": 666,
+    "amount": 20,
+    "price": 38157
+  },
+  {
+    "seller_id": 3,
+    "good_id": 777,
+    "amount": 28,
+    "price": 38326
+  },
+  {
+    "seller_id": 3,
+    "good_id": 888,
+    "amount": 20,
+    "price": 102999
+  },
+  {
+    "seller_id": 3,
+    "good_id": 999,
+    "amount": 16,
+    "price": 71066
+  },
+  {
+    "seller_id": 4,
+    "good_id": 111,
+    "amount": 17,
+    "price": 35965
+  },
+  {
+    "seller_id": 4,
+    "good_id": 222,
+    "amount": 18,
+    "price": 112828
+  },
+  {
+    "seller_id": 4,
+    "good_id": 333,
+    "amount": 16,
+    "price": 107293
+  },
+  {
+    "seller_id": 4,
+    "good_id": 444,
+    "amount": 28,
+    "price": 103824
+  },
+  {
+    "seller_id": 4,
+    "good_id": 555,
+    "amount": 28,
+    "price": 53887
+  },
+  {
+    "seller_id": 4,
+    "good_id": 666,
+    "amount": 16,
+    "price": 37728
+  },
+  {
+    "seller_id": 4,
+    "good_id": 777,
+    "amount": 23,
+    "price": 34566
+  },
+  {
+    "seller_id": 4,
+    "good_id": 888,
+    "amount": 19,
+    "price": 149645
+  },
+  {
+    "seller_id": 4,
+    "good_id": 999,
+    "amount": 23,
+    "price": 68239
+  },
+  {
+    "seller_id": 5,
+    "good_id": 111,
+    "amount": 22,
+    "price": 47283
+  },
+  {
+    "seller_id": 5,
+    "good_id": 222,
+    "amount": 28,
+    "price": 93257
+  },
+  {
+    "seller_id": 5,
+    "good_id": 333,
+    "amount": 28,
+    "price": 75790
+  },
+  {
+    "seller_id": 5,
+    "good_id": 444,
+    "amount": 24,
+    "price": 99460
+  },
+  {
+    "seller_id": 5,
+    "good_id": 555,
+    "amount": 16,
+    "price": 54108
+  },
+  {
+    "seller_id": 5,
+    "good_id": 666,
+    "amount": 16,
+    "price": 40655
+  },
+  {
+    "seller_id": 5,
+    "good_id": 777,
+    "amount": 18,
+    "price": 37318
+  },
+  {
+    "seller_id": 5,
+    "good_id": 888,
+    "amount": 22,
+    "price": 166128
+  },
+  {
+    "seller_id": 5,
+    "good_id": 999,
+    "amount": 27,
+    "price": 79821
+  },
+  {
+    "seller_id": 6,
+    "good_id": 111,
+    "amount": 25,
+    "price": 44280
+  },
+  {
+    "seller_id": 6,
+    "good_id": 222,
+    "amount": 21,
+    "price": 91456
+  },
+  {
+    "seller_id": 6,
+    "good_id": 333,
+    "amount": 19,
+    "price": 105410
+  },
+  {
+    "seller_id": 6,
+    "good_id": 444,
+    "amount": 24,
+    "price": 103500
+  },
+  {
+    "seller_id": 6,
+    "good_id": 555,
+    "amount": 22,
+    "price": 59332
+  },
+  {
+    "seller_id": 6,
+    "good_id": 666,
+    "amount": 23,
+    "price": 37363
+  },
+  {
+    "seller_id": 6,
+    "good_id": 777,
+    "amount": 20,
+    "price": 41602
+  },
+  {
+    "seller_id": 6,
+    "good_id": 888,
+    "amount": 27,
+    "price": 139917
+  },
+  {
+    "seller_id": 6,
+    "good_id": 999,
+    "amount": 27,
+    "price": 77783
+  },
+  {
+    "seller_id": 7,
+    "good_id": 111,
+    "amount": 26,
+    "price": 47084
+  },
+  {
+    "seller_id": 7,
+    "good_id": 222,
+    "amount": 26,
+    "price": 85352
+  },
+  {
+    "seller_id": 7,
+    "good_id": 333,
+    "amount": 18,
+    "price": 100051
+  },
+  {
+    "seller_id": 7,
+    "good_id": 444,
+    "amount": 28,
+    "price": 102052
+  },
+  {
+    "seller_id": 7,
+    "good_id": 555,
+    "amount": 14,
+    "price": 52919
+  },
+  {
+    "seller_id": 7,
+    "good_id": 666,
+    "amount": 22,
+    "price": 38871
+  },
+  {
+    "seller_id": 7,
+    "good_id": 777,
+    "amount": 16,
+    "price": 33378
+  },
+  {
+    "seller_id": 7,
+    "good_id": 888,
+    "amount": 28,
+    "price": 142158
+  },
+  {
+    "seller_id": 7,
+    "good_id": 999,
+    "amount": 21,
+    "price": 73304
+  }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="stock" type="availabilityType"/>
+  <xs:complexType name="entryType">
+    <xs:sequence>
+
+      <xs:element name="seller_id" type="xs:int"/>
+      <xs:element name="good_id" type="xs:int"/>
+      <xs:element name="amount" type="xs:int"/>
+      <xs:element name="price" type="xs:int"/>
+
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="availabilityType">
+    <xs:sequence>
+
+      <xs:element type="entryType" name="entry" maxOccurs="unbounded" minOccurs="0"/>
+
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

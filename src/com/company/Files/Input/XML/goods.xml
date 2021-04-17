@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<goods xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation = "goods.xsd">
+    <good>
+        <id>111</id>
+        <name>Tesla Model 3</name>
+    </good>
+    <good>
+        <id>222</id>
+        <name>Tesla Model X</name>
+    </good>
+    <good>
+        <id>333</id>
+        <name>Tesla Model S</name>
+    </good>
+    <good>
+        <id>444</id>
+        <name>Jaguar I-Pace</name>
+    </good>
+    <good>
+        <id>555</id>
+        <name>BMW i3</name>
+    </good>
+    <good>
+        <id>666</id>
+        <name>Chevrolet Bolt</name>
+    </good>
+    <good>
+        <id>777</id>
+        <name>Nissan Leaf</name>
+    </good>
+    <good>
+        <id>888</id>
+        <name>Porsche Taycan</name>
+    </good>
+    <good>
+        <id>999</id>
+        <name>Audi e-tron</name>
+    </good>
+</goods>
