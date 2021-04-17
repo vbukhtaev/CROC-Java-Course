@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<sales>
+  <entry>
+    <good>Jaguar I-Pace</good>
+    <amount>80</amount>
+  </entry>
+  <entry>
+    <good>Tesla Model 3</good>
+    <amount>68</amount>
+  </entry>
+  <entry>
+    <good>BMW i3</good>
+    <amount>66</amount>
+  </entry>
+  <entry>
+    <good>Tesla Model X</good>
+    <amount>62</amount>
+  </entry>
+  <entry>
+    <good>Nissan Leaf</good>
+    <amount>60</amount>
+  </entry>
+</sales>

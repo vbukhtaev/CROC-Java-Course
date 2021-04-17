@@ -56,9 +56,19 @@ public enum Tag {
     GOOD("good"),
 
     /**
+     * Тег &lt;goods&gt;&lt;/goods&gt;
+     */
+    GOODS("goods"),
+
+    /**
      * Тег &lt;seller&gt;&lt;/seller&gt;
      */
     SELLER("seller"),
+
+    /**
+     * Тег &lt;sellers&gt;&lt;/sellers&gt;
+     */
+    SELLERS("sellers"),
 
     /**
      * Тег &lt;entry&gt;&lt;/entry&gt;

@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<sales>
+  <entry>
+    <good>Chevrolet Bolt</good>
+    <amount>56</amount>
+  </entry>
+  <entry>
+    <good>Audi e-tron</good>
+    <amount>51</amount>
+  </entry>
+  <entry>
+    <good>BMW i3</good>
+    <amount>66</amount>
+  </entry>
+  <entry>
+    <good>Nissan Leaf</good>
+    <amount>60</amount>
+  </entry>
+  <entry>
+    <good>Porsche Taycan</good>
+    <amount>47</amount>
+  </entry>
+  <entry>
+    <good>Tesla Model S</good>
+    <amount>41</amount>
+  </entry>
+  <entry>
+    <good>Tesla Model X</good>
+    <amount>62</amount>
+  </entry>
+  <entry>
+    <good>Jaguar I-Pace</good>
+    <amount>80</amount>
+  </entry>
+  <entry>
+    <good>Tesla Model 3</good>
+    <amount>68</amount>
+  </entry>
+</sales>
