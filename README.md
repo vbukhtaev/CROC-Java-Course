@@ -14,3 +14,5 @@ Homeworks are on [__master branch__](https://github.com/RaCcOoN1837/KROK-Java-Co
 [__Homework #5__](https://github.com/RaCcOoN1837/KROK-Java-Course/commit/dcfd49ef269159fc2d680c0a91aef7a4bb98b498)
 
 [__Homework #6__](https://github.com/RaCcOoN1837/CROC-Java-Course/commit/ad7fdaf1e7ca3c2dfaab0de571ba84198792bb60)
+
+[__Final Homework__](https://github.com/RaCcOoN1837/CROC-Java-Course/commit/be7eedfef90d7d58e02a2d3415ba04c028a10036)
