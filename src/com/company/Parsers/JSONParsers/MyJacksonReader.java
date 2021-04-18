@@ -48,7 +48,6 @@ public class MyJacksonReader extends MyParser {
         try {
             goodPojos = mapper.readValue(this.goods , new TypeReference<List<GoodPojo>>(){});
 
-            // TODO переработать обработку исключений
         } catch (IOException e) {
             System.err.println("Выброшено IOException при попытке распарсить файл " +
                     "с товарами \"" + this.goods + "\"!");
@@ -79,7 +78,6 @@ public class MyJacksonReader extends MyParser {
         try {
             sellerPojos = mapper.readValue(this.sellers , new TypeReference<List<SellerPojo>>(){});
 
-            // TODO переработать обработку исключений
         } catch (IOException e) {
             System.err.println("Выброшено IOException при попытке распарсить файл " +
                     "с продавцами \"" + this.sellers + "\"!");
@@ -113,7 +111,6 @@ public class MyJacksonReader extends MyParser {
         try {
             stockPojos = mapper.readValue(this.stock , new TypeReference<List<StockEntryPojo>>(){});
 
-            // TODO переработать обработку исключений
         } catch (IOException e) {
             System.err.println("Выброшено IOException при попытке распарсить файл " +
                     "с информацией о наличии товаров \"" + this.stock + "\"!");
@@ -155,7 +152,6 @@ public class MyJacksonReader extends MyParser {
         try {
             salePojos = mapper.readValue(this.sales , new TypeReference<List<SalePojo>>(){});
 
-            // TODO переработать обработку исключений
         } catch (IOException e) {
             System.err.println("Выброшено IOException при попытке распарсить файл " +
                     "с продажами \"" + this.sales + "\"!");

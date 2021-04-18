@@ -99,7 +99,6 @@ public class MySaxParser extends MyParser {
             parser = factory.newSAXParser();
             parser.parse(file, handler);
 
-            // TODO переработать обработку исключений.
         } catch (ParserConfigurationException e) {
             System.err.println("Выброшено ParserConfigurationException при попытке распарсить файл " +
                     "\"" + file + "\"!");

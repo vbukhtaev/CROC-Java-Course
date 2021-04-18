@@ -70,7 +70,6 @@ public class MySaxWriter {
             writer.writeEndElement();
             writer.writeEndDocument();
 
-            // TODO переработать обработку исключений
         } catch (XMLStreamException e) {
             System.err.println("Выброшено XMLStreamException при попытке записи в файл " +
                     "\"" + file + "\"!");
@@ -109,7 +108,6 @@ public class MySaxWriter {
             writer.writeEndElement();
             writer.writeEndDocument();
 
-            // TODO переработать обработку исключений
         } catch (XMLStreamException e) {
             System.err.println("Выброшено XMLStreamException при попытке записи в файл " +
                     "\"" + file + "\"!");
@@ -148,7 +146,6 @@ public class MySaxWriter {
             writer.writeEndElement();
             writer.writeEndDocument();
 
-            // TODO переработать обработку исключений
         } catch (XMLStreamException e) {
             System.err.println("Выброшено XMLStreamException при попытке записи в файл " +
                     "\"" + file + "\"!");
@@ -187,7 +184,6 @@ public class MySaxWriter {
             writer.writeEndElement();
             writer.writeEndDocument();
 
-            // TODO переработать обработку исключений
         } catch (XMLStreamException e) {
             System.err.println("Выброшено XMLStreamException при попытке записи в файл " +
                     "\"" + file + "\"!");
@@ -226,7 +222,6 @@ public class MySaxWriter {
             writer.writeEndElement();
             writer.writeEndDocument();
 
-            // TODO переработать обработку исключений
         } catch (XMLStreamException e) {
             System.err.println("Выброшено XMLStreamException при попытке записи в файл " +
                     "\"" + file + "\"!");
@@ -316,11 +311,15 @@ public class MySaxWriter {
         try {
             writer = new IndentingXMLStreamWriter(factory.createXMLStreamWriter(new FileOutputStream(file)));
 
-            // TODO переработать обработку исключений
         } catch (XMLStreamException e) {
-            e.printStackTrace();
+            System.err.println("Выброшено XMLStreamException при попытке записи в файл " +
+                    "\"" + file + "\"!");
+            System.exit(-1);
+
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Выброшено FileNotFoundException при попытке записи в файл " +
+                    "\"" + file + "\"!");
+            System.exit(-1);
         }
 
         return writer;

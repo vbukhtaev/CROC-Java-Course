@@ -359,7 +359,6 @@ public class MyDomParser extends MyParser {
         try {
             document = factory.newDocumentBuilder().parse(file);
 
-            // TODO переработать обработку исключений.
         } catch (ParserConfigurationException e) {
             System.err.println("Выброшено ParserConfigurationException при попытке распарсить файл " +
                     "\"" + file + "\"!");

@@ -58,7 +58,6 @@ public class MySimpleParser extends MyParser {
                 this.goodsMap.put(goodID, new Good(goodName));
             }
 
-            // TODO переработать обработку исключений.
         } catch (FileNotFoundException e) {
             System.err.println("Файл с товарами \"" + this.goods + "\" не найден!");
             System.exit(-1);
@@ -102,7 +101,6 @@ public class MySimpleParser extends MyParser {
                 this.sellersMap.put(sellerID, new Seller(firstName, lastName));
             }
 
-            // TODO переработать обработку исключений.
         } catch (FileNotFoundException e) {
             System.err.println("Файл с продавцами \"" + this.sellers + "\" не найден!");
             System.exit(-1);
@@ -153,7 +151,6 @@ public class MySimpleParser extends MyParser {
                 this.stockList.add(new StockEntry(seller, good, stockAmount, goodPrice));
             }
 
-            // TODO переработать обработку исключений.
         } catch (FileNotFoundException e) {
             System.err.println("Файл с информацией о наличии товаров \"" + this.stock + "\" не найден!");
             System.exit(-1);
@@ -207,7 +204,6 @@ public class MySimpleParser extends MyParser {
                 this.salesMap.put(saleID, new Sale(seller, good, soldAmount, date));
             }
 
-            // TODO переработать обработку исключений.
         } catch (FileNotFoundException e) {
             System.err.println("Файл с продажами \"" + this.sales + "\" не найден!");
             System.exit(-1);
