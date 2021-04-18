@@ -1,18 +1,18 @@
 package com.company;
 
-import com.company.Model.Good;
-import com.company.Model.Sale;
-import com.company.Model.Seller;
-import com.company.Model.StockEntry;
-import com.company.Parsers.JSONParsers.MyJacksonReader;
-import com.company.Parsers.JSONParsers.MySimpleParser;
-import com.company.Parsers.MyParser;
-import com.company.Parsers.Tag;
-import com.company.Parsers.XMLParsers.MyDomParser;
-import com.company.Parsers.XMLParsers.MySaxParser;
-import com.company.Utilities.Input;
-import com.company.Utilities.Pair;
-import com.company.Writers.MySaxWriter;
+import com.company.model.Good;
+import com.company.model.Sale;
+import com.company.model.Seller;
+import com.company.model.StockEntry;
+import com.company.parsers.json.MyJacksonReader;
+import com.company.parsers.json.MySimpleParser;
+import com.company.parsers.MyParser;
+import com.company.parsers.Tag;
+import com.company.parsers.xml.MyDomParser;
+import com.company.parsers.xml.MySaxParser;
+import com.company.utilities.Input;
+import com.company.utilities.Pair;
+import com.company.writers.MySaxWriter;
 
 import java.io.File;
 import java.time.LocalDate;

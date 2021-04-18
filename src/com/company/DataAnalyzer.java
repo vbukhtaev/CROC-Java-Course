@@ -1,10 +1,10 @@
 package com.company;
 
-import com.company.Model.Good;
-import com.company.Model.Sale;
-import com.company.Model.Seller;
-import com.company.Model.StockEntry;
-import com.company.Utilities.Pair;
+import com.company.model.Good;
+import com.company.model.Sale;
+import com.company.model.Seller;
+import com.company.model.StockEntry;
+import com.company.utilities.Pair;
 
 import java.time.LocalDate;
 import java.util.*;
