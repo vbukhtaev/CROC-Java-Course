@@ -25,17 +25,17 @@ public class MySaxWriter {
     /**
      * Шаблон для приведения даты к строке.
      */
-    private static final DateTimeFormatter datePattern = DateTimeFormatter.ofPattern("dd MMMM yyyy");
+    private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd MMMM yyyy");
 
     /**
      * Шаблон для форматирования чисел с плавающей запятой.
      */
-    private static final DecimalFormat floatPattern = new DecimalFormat( "##.##" );
+    private static final DecimalFormat FLOAT_PATTERN = new DecimalFormat( "##.##" );
 
     /**
      * Путь к директории с выходными файлами.
      */
-    private static final String directory = "src\\com\\company\\Files\\Output";
+    private static final String DIRECTORY = "src\\com\\company\\Files\\Output";
 
     /**
      * Записывает в файл ассоциативный массив, ключами которого являются объекты класса {@code Good},
@@ -49,7 +49,7 @@ public class MySaxWriter {
      */
     public void writeTripleMap(Map<Good, Pair<Seller, Integer>> map, String fileName, Tag rootTag, Tag integerTag) {
 
-        File file = new File(directory, fileName);
+        File file = new File(DIRECTORY, fileName);
         XMLStreamWriter writer = getWriter(file);
 
         try {
@@ -88,7 +88,7 @@ public class MySaxWriter {
      */
     public void writeGoodsMap(Map<Good, Integer> map, String fileName, Tag rootTag, Tag integerTag) {
 
-        File file = new File(directory, fileName);
+        File file = new File(DIRECTORY, fileName);
         XMLStreamWriter writer = getWriter(file);
 
         try {
@@ -126,7 +126,7 @@ public class MySaxWriter {
      */
     public void writeSellersMap(Map<Seller, Integer> map, String fileName, Tag rootTag, Tag integerTag) {
 
-        File file = new File(directory, fileName);
+        File file = new File(DIRECTORY, fileName);
         XMLStreamWriter writer = getWriter(file);
 
         try {
@@ -164,7 +164,7 @@ public class MySaxWriter {
      */
     public void writeDatesIntegerMap(Map<LocalDate, Integer> map, String fileName, Tag rootTag, Tag integerTag) {
 
-        File file = new File(directory, fileName);
+        File file = new File(DIRECTORY, fileName);
         XMLStreamWriter writer = getWriter(file);
 
         try {
@@ -202,7 +202,7 @@ public class MySaxWriter {
      */
     public void writeDatesFloatMap(Map<LocalDate, Double> map, String fileName, Tag rootTag, Tag floatTag) {
 
-        File file = new File(directory, fileName);
+        File file = new File(DIRECTORY, fileName);
         XMLStreamWriter writer = getWriter(file);
 
         try {
@@ -238,7 +238,7 @@ public class MySaxWriter {
      */
     private void writeDate(XMLStreamWriter writer, LocalDate localDate) throws XMLStreamException {
         writer.writeStartElement(Tag.DATE.toString());
-        writer.writeCharacters(localDate.format(datePattern));
+        writer.writeCharacters(localDate.format(DATE_PATTERN));
         writer.writeEndElement();
     }
 
@@ -294,7 +294,7 @@ public class MySaxWriter {
      */
     private void writeDouble(XMLStreamWriter writer, Double number, Tag tag) throws XMLStreamException {
         writer.writeStartElement(tag.toString());
-        writer.writeCharacters(floatPattern.format(number));
+        writer.writeCharacters(FLOAT_PATTERN.format(number));
         writer.writeEndElement();
     }
 

@@ -54,8 +54,6 @@ package com.company;
  *
  * @author Bukhtaev Vladislav (Вариант 2)
  */
-
-
 public class Main {
 
     /**

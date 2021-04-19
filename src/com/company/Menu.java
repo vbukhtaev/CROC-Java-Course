@@ -49,16 +49,16 @@ public class Menu {
     /**
      * Объект, записывающий результаты заданий в файл.
      */
-    private static final MySaxWriter writer = new MySaxWriter();
+    private static final MySaxWriter WRITER = new MySaxWriter();
 
     /**
      * Директория с входными JSON файлами.
      */
-    private static final String jsonDirectory = "src\\com\\company\\Files\\Input\\JSON";
+    private static final String JSON_DIRECTORY = "src\\com\\company\\Files\\Input\\JSON";
     /**
      * Директория с входными XML файлами.
      */
-    private static final String xmlDirectory = "src\\com\\company\\Files\\Input\\XML";
+    private static final String XML_DIRECTORY = "src\\com\\company\\Files\\Input\\XML";
 
     /**
      * Метод для запуска меню.
@@ -69,19 +69,19 @@ public class Menu {
         switch (Input.inputInteger("Ваш выбор: ", 2)) {
 
             case 1:
-                goodsFile = new File(jsonDirectory, "goods.json");
-                sellersFile = new File(jsonDirectory, "sellers.json");
-                stockFile = new File(jsonDirectory, "stock.json");
-                salesFile = new File(jsonDirectory, "sales.json");
+                goodsFile = new File(JSON_DIRECTORY, "goods.json");
+                sellersFile = new File(JSON_DIRECTORY, "sellers.json");
+                stockFile = new File(JSON_DIRECTORY, "stock.json");
+                salesFile = new File(JSON_DIRECTORY, "sales.json");
 
                 parser = chooseJsonParser();
                 break;
 
             case 2:
-                goodsFile = new File(xmlDirectory, "goods.xml");
-                sellersFile = new File(xmlDirectory, "sellers.xml");
-                stockFile = new File(xmlDirectory, "stock.xml");
-                salesFile = new File(xmlDirectory, "sales.xml");
+                goodsFile = new File(XML_DIRECTORY, "goods.xml");
+                sellersFile = new File(XML_DIRECTORY, "sellers.xml");
+                stockFile = new File(XML_DIRECTORY, "stock.xml");
+                salesFile = new File(XML_DIRECTORY, "sales.xml");
 
                 parser = chooseXmlParser();
                 break;
@@ -124,63 +124,63 @@ public class Menu {
                 Map<Good, Pair<Seller, Integer>> mapOne = analyzer.getMaxStockAndSellerByGoods();
 
                 // Выводим результат.
-                writer.writeTripleMap(mapOne, "Task1.xml", Tag.STOCK, Tag.AMOUNT);
+                WRITER.writeTripleMap(mapOne, "Task1.xml", Tag.STOCK, Tag.AMOUNT);
                 break;
 
             case 2:
                 Map<Good, Pair<Seller, Integer>> mapTwo = analyzer.getMinPriceAndSellerByGoods();
 
                 // Выводим результат.
-                writer.writeTripleMap(mapTwo, "Task2.xml", Tag.STOCK, Tag.PRICE);
+                WRITER.writeTripleMap(mapTwo, "Task2.xml", Tag.STOCK, Tag.PRICE);
                 break;
 
             case 3:
                 Map<Good, Integer> mapThree = analyzer.getTotalStockAmountByGoods();
 
                 // Выводим результат.
-                writer.writeGoodsMap(mapThree, "Task3.xml", Tag.STOCK, Tag.AMOUNT);
+                WRITER.writeGoodsMap(mapThree, "Task3.xml", Tag.STOCK, Tag.AMOUNT);
                 break;
 
             case 4:
                 Map<Good, Integer> mapFour = analyzer.getTotalSoldAmountByGoods();
 
                 // Выводим результат.
-                writer.writeGoodsMap(mapFour, "Task4.xml", Tag.SALES, Tag.AMOUNT);
+                WRITER.writeGoodsMap(mapFour, "Task4.xml", Tag.SALES, Tag.AMOUNT);
                 break;
 
             case 5:
                 Map<Seller, Integer> mapFive = analyzer.getTopSellers(5);
 
                 // Выводим результат.
-                writer.writeSellersMap(mapFive, "Task5.xml", Tag.SALES, Tag.AMOUNT);
+                WRITER.writeSellersMap(mapFive, "Task5.xml", Tag.SALES, Tag.AMOUNT);
                 break;
 
             case 6:
                 Map<Good, Integer> mapSix = analyzer.getTopSoldGoods(5);
 
                 // Выводим результат.
-                writer.writeGoodsMap(mapSix, "Task6.xml", Tag.SALES, Tag.AMOUNT);
+                WRITER.writeGoodsMap(mapSix, "Task6.xml", Tag.SALES, Tag.AMOUNT);
                 break;
 
             case 7:
                 Map<LocalDate, Integer> mapSeven = analyzer.getTotalSoldAmountByDates();
 
                 // Выводим результат.
-                writer.writeDatesIntegerMap(mapSeven, "Task7.xml", Tag.SALES, Tag.AMOUNT);
+                WRITER.writeDatesIntegerMap(mapSeven, "Task7.xml", Tag.SALES, Tag.AMOUNT);
                 break;
 
             case 8:
                 Map<LocalDate, Integer> mapEight = analyzer.getTopSoldDates(5);
 
                 // Выводим результат.
-                writer.writeDatesIntegerMap(mapEight, "Task8.xml", Tag.SALES, Tag.AMOUNT);
+                WRITER.writeDatesIntegerMap(mapEight, "Task8.xml", Tag.SALES, Tag.AMOUNT);
                 break;
 
             case 9:
                 Map<LocalDate, Double> mapNine = analyzer.getAverageSoldAmountByGoods();
 
                 // Выводим результат.
-                writer.writeDatesFloatMap(mapNine, "Task9.xml", Tag.SALES, Tag.AMOUNT);
+                WRITER.writeDatesFloatMap(mapNine, "Task9.xml", Tag.SALES, Tag.AMOUNT);
                 break;
         }
     }
