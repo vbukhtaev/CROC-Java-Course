@@ -1,17 +1,23 @@
 package com.company.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Класс, описывающий продавца.
  */
+@XmlRootElement
 public class Seller {
 
     /**
      * Имя продавца.
      */
+    @XmlElement(name = "first_name")
     private final String firstName;
     /**
      * Фамилия продавца.
      */
+    @XmlElement(name = "last_name")
     private final String lastName;
 
     /**
@@ -22,6 +28,19 @@ public class Seller {
     public Seller(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    private Seller() {
+        this.firstName = null;
+        this.lastName = null;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     @Override

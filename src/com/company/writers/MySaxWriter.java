@@ -12,7 +12,6 @@ import javax.xml.stream.XMLStreamWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
@@ -26,11 +25,6 @@ public class MySaxWriter {
      * Шаблон для приведения даты к строке.
      */
     private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd MMMM yyyy");
-
-    /**
-     * Шаблон для форматирования чисел с плавающей запятой.
-     */
-    private static final DecimalFormat FLOAT_PATTERN = new DecimalFormat( "##.##" );
 
     /**
      * Путь к директории с выходными файлами.
@@ -251,7 +245,11 @@ public class MySaxWriter {
      */
     private void writeGood(XMLStreamWriter writer, Good good) throws XMLStreamException {
         writer.writeStartElement(Tag.GOOD.toString());
-        writer.writeCharacters(good.toString());
+
+        writer.writeStartElement(Tag.NAME.toString());
+        writer.writeCharacters(good.getName());
+        writer.writeEndElement();
+
         writer.writeEndElement();
     }
 
@@ -264,7 +262,15 @@ public class MySaxWriter {
      */
     private void writeSeller(XMLStreamWriter writer, Seller seller) throws XMLStreamException {
         writer.writeStartElement(Tag.SELLER.toString());
-        writer.writeCharacters(seller.toString());
+
+        writer.writeStartElement(Tag.FIRST_NAME.toString());
+        writer.writeCharacters(seller.getFirstName());
+        writer.writeEndElement();
+
+        writer.writeStartElement(Tag.LAST_NAME.toString());
+        writer.writeCharacters(seller.getLastName());
+        writer.writeEndElement();
+
         writer.writeEndElement();
     }
 
@@ -294,7 +300,8 @@ public class MySaxWriter {
      */
     private void writeDouble(XMLStreamWriter writer, Double number, Tag tag) throws XMLStreamException {
         writer.writeStartElement(tag.toString());
-        writer.writeCharacters(FLOAT_PATTERN.format(number));
+//        writer.writeCharacters(String.format("%.2f", number));
+        writer.writeCharacters(Double.toString(Math.round(number * 100.0) / 100.0));
         writer.writeEndElement();
     }
 
